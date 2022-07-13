@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	height: 100%;
+	background-color: #f5f5f5;
+}
+nav {
+	background-color:#686868;
+	height: 70px;
+	width: 100%;
+}
+nav a:hover{
+    background-color:#ABABAB;
+    transition: .5s
+}
+label.logo {
+	line-height: 8px;
+	padding: 15px;
+}
+label.logo img{
+    width: 250px;
+    margin-top: -90px;
+}
+nav ul {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a {
+	color: white;
+	font-size: 17px;
+	padding: 7px 13px;
+	border-radius: 3px;
+	text-transform: uppercase;
+}
+a.active{
+	background-color:#333333;
+	transition: 2s;
+}
+.checkbtn {
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check {
+	display: none;
+}
+
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 952px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+@media (max-width: 858px){
+	.checkbtn {
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #1d075f;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav ul li a {
+		font-size: 20px;
+	}
+	a:hover, a.active {
+		background: none;
+		color: #404040;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+#produtos{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: absolute;
+	left: 13%;
+	top: 15%;
+	max-width: 1500px;
+	width: 80%;
+	justify-content: center;
+	height: 100vh;
+}
+.produto{
+	width: 300px;
+	height: 400px;
+	background-color:rgba(255, 255, 255, .2);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+	margin: 20px;
+	border-radius: 10px;
+
+}
+.produto img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+	user-select: none;
+	pointer-events: none;
+}
+.produto div{
+	padding: 10px;
+}
+.produto div p{
+	margin-bottom: 10px;
+}
+.produto div hr{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.produto div button{
+	width: 100%;
+	background-color: transparent;;
+	border: 1px #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 13pt;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .2s;
+	font-weight: bold;
+	display: block;
+}
+
+.produto div button:hover{
+	background-color: #ed8989;
+	letter-spacing: 3px;
+}
+
+.produto h2{
+	font-family: 'Roboto Slab', serif;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 40px;
+	background: #686868;
+	margin-top: 2200px;
+}
+
+footer .beneficio {
+	display: flex;
+	align-items: center;
+}
+
+footer .beneficio img {
+	margin-right: 5px;
+}
+
+footer .beneficio h3, footer .beneficio p{
+	color: #fefefe;
+}
