@@ -1,2 +1,2 @@
 # Loja-Sportlife
-Projeto de Loja para a disciplina de Deign de Interfaces 1.
+Loja voltada ao estilo de vida SportLife.
